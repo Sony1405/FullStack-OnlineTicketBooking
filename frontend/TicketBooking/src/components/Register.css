@@ -1,0 +1,39 @@
+.register-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.register-card {
+  background-color: #ffffff; /* white background */
+  border-radius: 12px;
+}
+
+.register-card input {
+  border-radius: 8px;
+}
+
+.register-card button {
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.register-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* or black depending on modal background */
+  cursor: pointer;
+  z-index: 3;
+}
+.close-button:hover{
+    color: #ff6600;
+}

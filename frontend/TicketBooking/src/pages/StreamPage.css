@@ -1,0 +1,18 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.premiere-badge {
+  position: absolute;
+  bottom: 40px;
+  left: 8px;
+  background-color: #ff4c61;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}

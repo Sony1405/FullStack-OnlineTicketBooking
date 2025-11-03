@@ -1,0 +1,22 @@
+# Node / React
+/frontend/TicketBooking/node_modules/
+/frontend/TicketBooking/build/
+/frontend/TicketBooking/.env
+
+# Spring Boot
+/backend-springboot/target/
+/backend-springboot/.idea/
+/backend-springboot/.settings/
+/backend-springboot/.classpath
+/backend-springboot/.project
+/backend-springboot/*.iml
+/backend-springboot/src/main/resources/application.properties
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+ 

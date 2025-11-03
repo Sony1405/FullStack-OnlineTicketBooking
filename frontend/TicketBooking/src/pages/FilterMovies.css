@@ -1,0 +1,6 @@
+.accordion-button::after {
+  order: -1;             /* Move arrow to left */
+  margin-right: 15px;     /* Space between arrow and text */
+  margin-left: 0;
+  transform: scale(0.7); /* Reduce size (0.7 = 70%) */
+}

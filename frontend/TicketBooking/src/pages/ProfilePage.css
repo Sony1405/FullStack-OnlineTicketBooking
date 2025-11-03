@@ -1,0 +1,121 @@
+.profile-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  max-width: 900px;
+  width: 100%;
+  background: linear-gradient(145deg, #181818, #0f0f0f);
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.15);
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(135deg, #ffcc00, #ff8800);
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px 20px;
+  transition: background 0.3s ease;
+}
+
+.detail-item:hover {
+  background: rgba(255, 193, 7, 0.08);
+}
+
+.detail-icon {
+  font-size: 22px;
+  color: #ffcc00;
+  flex-shrink: 0;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.value {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-loading {
+  text-align: center;
+  padding-top: 100px;
+  color: #ffcc00;
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(135deg, #ffcc00, #ff8800);
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #ffcc00;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.profile-close-btn:hover {
+  color: #fff;
+}

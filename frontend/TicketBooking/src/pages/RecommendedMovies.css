@@ -1,0 +1,62 @@
+/* Container spacing similar to Music/Concerts section */
+.recommended-section {
+  padding: 0 190px;
+  cursor: pointer;
+}
+
+/* Slick slider layout */
+.recommended-slider-container {
+  position: relative;
+}
+
+/* Small space between slides */
+.recommended-slide {
+  padding: 0 8px;
+}
+
+/* Card styling */
+.recommended-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.recommended-card:hover {
+  transform: translateY(-5px);
+}
+
+.recommended-img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.movie-date {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Slick arrow styles (outside carousel) */
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+  font-size: 28px;
+}
+
+.slick-prev {
+  left: -35px;
+  z-index: 2;
+}
+
+.slick-next {
+  right: -35px;
+  z-index: 2;
+}

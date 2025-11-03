@@ -1,0 +1,39 @@
+.edit-profile-modal .modal-content {
+  background: #181818;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.edit-profile-modal .modal-header {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #ffcc00;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close-btn:hover {
+  color: #fff;
+}
+
+.edit-profile-modal .form-control {
+  background: #1f1f1f;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.edit-profile-modal .form-control:focus {
+  background: #1f1f1f;
+  border-color: #ffcc00;
+  box-shadow: none;
+  color: #fff;
+}

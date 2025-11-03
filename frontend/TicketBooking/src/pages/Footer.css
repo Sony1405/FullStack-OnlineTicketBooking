@@ -1,0 +1,129 @@
+.app-footer {
+  background: linear-gradient(90deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffc107; /* Yellow-gold text */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #bbb;
+}
+
+.footer-section h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffc107;
+  transform: translateX(3px);
+}
+
+.footer-section p {
+  color: #bbb;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* 🌐 Social Icons Section */
+
+.social-icons {
+    display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+/* Hover Effect — gold + glowing border */
+.social-icons svg:hover {
+  color: #ffc107; /* Gold hover color */
+  transform: scale(1.15);
+  border-color: #ffc107;
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-author {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,161 @@
+.rounded-pill {
+  border-radius: 10px !important;
+}
+
+.me-auto {
+  font-size: 16px !important;
+  padding-left: 0px !important;
+}
+
+/* Glassmorphism Navbar */
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease, background 0.3s ease, opacity 0.3s ease;
+}
+
+/* Shadow on scroll */
+.navbar-glass.scrolled {
+  background: rgba(255, 255, 255, 0.7); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide navbar smoothly when on search page */
+.navbar-glass.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navbar text/icons */
+.navbar-glass .nav-link,
+.navbar-glass .dropdown-toggle,
+.navbar-glass .form-control,
+.navbar-glass .navbar-toggler,
+.navbar-glass .navbar-brand,
+.navbar-glass .nav-link svg {
+  color: black !important; /* Base color for everything */
+}
+
+/* ✅ Keep these colors EXACTLY as you said */
+.navbar-glass .navbar-brand {
+  color: #ffc107 !important; /* Yellow brand name */
+}
+
+.navbar-glass .nav-link .icon-heart {
+  color: red !important;
+}
+
+.navbar-glass .nav-link .icon-ticket {
+  color: orange !important;
+}
+
+.navbar-glass .nav-link .icon-moon {
+  color: #FFD700 !important;
+}
+.navbar-glass .nav-link .icon-bell {
+  color: #dc3545 !important;
+}
+
+/* Close button for Search Page */
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 28px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.close-btn:hover {
+  color: #dc3545;
+}
+
+/* Blur overlay when login modal is open */
+.overlay-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px) brightness(0.5);
+  z-index: 1040; /* below Bootstrap modal which is 1050 */
+}
+#profile-dropdown {
+  border: none !important;
+  font-size: 20px;
+  background: transparent !important;
+}
+
+#profile-dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 50%;
+}
+
+
+/* 🌙 Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .navbar-glass {
+  background: rgba(20, 20, 20, 0.9) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .navbar-brand,
+body.dark-mode .dropdown-toggle {
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: #f1f1f1 !important;
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #ccc !important;
+  color: #ccc !important;
+}
+
+
+
+/* 🌟 Sign In Button Styling */
+.navbar-glass .btn-outline-primary {
+  border: 2px solid #007bff !important;
+  color: #007bff !important;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.navbar-glass .btn-outline-primary:hover {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white !important;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+/* 🌙 Dark Mode - Sign In Button */
+body.dark-mode .navbar-glass .btn-outline-primary {
+  border-color: #00bfff !important;
+  color: #00bfff !important;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .navbar-glass .btn-outline-primary:hover {
+  background: linear-gradient(135deg, #00bfff, #1e90ff);
+  color: #fff !important;
+  box-shadow: 0 4px 10px rgba(0, 191, 255, 0.4);
+}
+

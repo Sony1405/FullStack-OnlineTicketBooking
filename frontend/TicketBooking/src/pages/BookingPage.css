@@ -1,0 +1,295 @@
+.overlay-booking-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/* Trailer Background */
+.trailer-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+/* Booking Panel Centered */
+.booking-panel {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+/* Step Title */
+.step-title {
+  font-size: 0.9rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+/* Seat Tier Layout */
+.seat-tier {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.seat.available {
+  background: #ffd700;
+  color: #000;
+}
+
+.seat.selected {
+  background: #ff4d6d;
+  color: white;
+  box-shadow: 0 0 8px #ff4d6d;
+}
+
+.seat.empty {
+  background: transparent;
+  pointer-events: none;
+}
+
+/* Booking Summary */
+.booking-summary {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  backdrop-filter: blur(6px);
+  text-align: center;   /* center align text */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.booking-summary h5 {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.booking-summary p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+
+
+/* Date Selector */
+.date-selector {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0;
+  /* removed scrollbar */
+  overflow-x: hidden;
+}
+
+.date-card {
+  padding: 8px 12px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  min-width: 60px;
+  transition: 0.3s;
+}
+
+.date-card.active {
+  background: #ff4d6d;
+  color: white;
+  font-weight: bold;
+}
+
+.day {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.date {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.month {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* === Seat Grid Styling === */
+.seat-tier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px; /* space between rows */
+  margin-top: 15px;
+  
+}
+
+/* Each Row */
+.seat-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px; /* space between seat blocks */
+}
+
+/* Each Seat */
+.seat {
+  width: 35px;
+  height: 35px;
+  background-color: #1e90ff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+/* Hover & Selected Effects */
+.seat:hover {
+  transform: scale(1.1);
+  background-color: #ffb703;
+  color: #000;
+}
+
+.seat.selected {
+  background-color: #00c853;
+  color: #fff;
+}
+
+/* Aisle Empty Spot */
+.seat.empty {
+  visibility: hidden;
+  width: 30px;
+}
+
+/* Tier Colors */
+.seat.Premium.available { background-color: #00bcd4; }
+.seat.Standard.available { background-color: #1e90ff; }
+.seat.Economy.available { background-color: #6a5acd; }
+
+/* Tooltip on hover (price info) */
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 45px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.seat:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Price text under seat ID */
+.seat-price {
+  font-size: 8px;
+  opacity: 0.8;
+}
+
+/* ===================== */
+/* 🎭 THEATRE LIST STYLE */
+/* ===================== */
+.theatre-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.theatre-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 15px 20px;
+  width: 260px;
+  color: #fff !important;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.theatre-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  border-color: #ffd700;
+}
+
+.theatre-card.active {
+  background: #ff4d6d;
+  color: #fff;
+  transform: scale(1.07);
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 20px rgba(255, 77, 109, 0.8);
+}
+
+.theatre-card h5 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+.theatre-card p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
